@@ -1,0 +1,18 @@
+[tool.black]
+line-length = 120
+[tool.isort]
+profile = "black"
+line_length = 120
+extra_standard_library = ["pytest", "pydantic"]
+[tool.tryceratops]
+ignore = ["TC002", "TC003"]
+[tool.mypy]
+python_version = "3.08"
+warn_unused_configs = true
+warn_unused_ignores = true
+namespace_packages = true
+explicit_package_bases = true
+ignore_missing_imports = true
+plugins = [
+    "pydantic.mypy"
+]

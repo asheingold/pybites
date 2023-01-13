@@ -1,0 +1,4 @@
+[flake8]
+max-line-length=120 # ← Required to sync with Black/isort
+extend-ignore=E203 # ← Required to sync with Black
+exclude=__init__.py # ← Frequently I found myself willing to ignore __init__.py files
