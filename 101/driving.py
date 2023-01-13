@@ -7,7 +7,7 @@ def allowed_driving(name, age):
        
     if(age>=MIN_DRIVING_AGE):
         print(f"{name} is allowed to drive")
-    else
+    else:
         print(f"{name} is not allowed to drive")
         
     pass
